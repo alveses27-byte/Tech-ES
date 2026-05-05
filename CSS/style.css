@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+body {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 15px;
+            background: #020617;
+        }
+
+        .menu a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .card-custom {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        video, audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+
+
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding-top: 80px;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* RESPONSIVO */
+}
+
+nav ul li a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 60px;
+}
+
+/* TEXTOS */
+h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+}
+
+/* BOTÃO */
+button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7dd3fc;
+}
+
+/* FORM */
+.form-container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #0b1120;
+    padding: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #64748b;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* FUNDO LATERAL */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+body::before {
+    left: 0;
+    background-image: url('IMAGEM/img-left.png.jpeg');
+}
+
+body::after {
+    right: 0;
+    background-image: url('IMAGEM/img-right.png.jpeg');
+}
+@media (max-width: 768px) {
+    body::before,
+    body::after {
+        display: none;
+    }
+    .lado {
+        display: none;
+    }
+}
+
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+
+/* TABELA */
+.tabela-linguagens {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #000;
+}
+
+.tabela-linguagens th {
+    background-color: #38bdf8;
+    color: #000;
+    padding: 10px;
+}
+
+.tabela-linguagens td {
+    padding: 10px;
+    border: 1px solid #052471;
+}
+
+.tabela-linguagens tr:hover {
+    background: rgba(56,189,248,0.2);
+}
+
+/* CARD */
+.card {
+    background: rgba(15, 23, 42, 0.75);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 15px;
+            background: #020617;
+        }
+
+        .menu a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .card-custom {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        video, audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+.lado {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 350px;
+    object-fit: cover; /* VOLTA PRO COVER */
+    object-position: center; /* controla o corte */
+    z-index: -1;
+    opacity: 0.6;
+}
+.lado {
+    mask-image: linear-gradient(to center, transparent, black 20%, black 80%, transparent);
+}
+
+
+.esquerdo {
+    left: 0;
+    object-position: left center;
+    opacity: 0.25;
+}
+
+.direito {
+    right: 0;
+    object-position: right center;
+    opacity: 0.25;
+}
