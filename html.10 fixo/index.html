@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech ES - Inovação em Software</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <span class="brand-dot"></span>Tech ES
+    </a>
+ 
+    <div class="d-flex align-items-center gap-3 ms-auto">
+      <!-- Botão Modo Claro/Escuro -->
+      <button class="theme-toggle" id="themeToggle" title="Alternar tema">
+        <span class="theme-icon" id="themeIcon">🌙</span>
+      </button>
+ 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#importancia">Importância</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item"><a class="nav-link" href="#video">Vídeo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- BANNER DE SAUDAÇÃO -->
+<div id="saudacaoBanner" style="display:none;" class="saudacao-banner">
+  <span id="saudacaoTexto"></span>
+  <button id="fecharSaudacao" class="fechar-saudacao">✕</button>
+</div>
+ 
+<main class="container my-4">
+ 
+  <!-- HOME -->
+  <section id="home" class="hero-section">
+    <div class="hero-badge">🚀 Inovação em Software</div>
+    <h1>Bem-vindo à <span class="highlight">Tech ES</span></h1>
+    <h2>Sobre a empresa</h2>
+    <p>
+      Este site foi desenvolvido como um suporte para auxiliar usuários em suas necessidades do dia a dia,
+      oferecendo orientações, conteúdos relevantes e ferramentas que contribuem para uma melhor experiência digital.
+      A proposta é tornar o acesso à informação mais simples, confiável e acessível a todos, além de apoiar os
+      usuários na resolução de dúvidas e na utilização consciente da tecnologia.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-number" data-target="120">0</span><span>+</span>
+        <span class="stat-label">Projetos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="50">0</span><span>+</span>
+        <span class="stat-label">Clientes</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="5">0</span><span>+</span>
+        <span class="stat-label">Anos</span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="my-5">
+    <h2>Nossos <span class="highlight">Serviços</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Desenvolvimento Mobile</h3>
+        <p>Aplicativos modernos para Android e iOS com design intuitivo e alto desempenho.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites e sistemas web responsivos, rápidos e acessíveis para qualquer dispositivo.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Soluções em Nuvem</h3>
+        <p>Infraestrutura escalável e segura para impulsionar o seu negócio digitalmente.</p>
+      </div>
+    </div>
+ 
+    <p class="mt-4">
+      Desenvolvimento Mobile — aplicativos modernos para Android e iOS que vão além da tecnologia: conectam pessoas,
+      ampliam o acesso à informação e transformam a forma como vivemos e aprendemos. Com design intuitivo, navegação
+      acessível e alto desempenho, os aplicativos ajudam a simplificar o dia a dia.
+    </p>
+ 
+    <!-- VÍDEO -->
+    <section id="video" class="my-4">
+      <h2>Vídeo</h2>
+      <div class="media-wrapper">
+        <video class="img-fluid rounded-3" controls>
+          <source src="videoplayback.mp4" type="video/mp4">
+          <track src="legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
+        </video>
+      </div>
+ 
+      <h2 class="mt-4">Meu áudio</h2>
+      <div class="audio-wrapper">
+        <audio controls class="w-100">
+          <source src="audioplay.back.mp4" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+  </section>
+ 
+  <!-- IMPORTÂNCIA -->
+  <section id="importancia" class="my-5">
+    <h1>A importância da <span class="highlight">tecnologia</span> na vida das pessoas!</h1>
+    <h2>Tecnologia no dia a dia</h2>
+    <p>
+      A internet deixou de ser apenas uma rede de comunicação para se tornar a infraestrutura vital da sociedade moderna.
+      Na Tech ES, entendemos que a importância da rede mundial de computadores reside na sua capacidade de democratizar
+      o acesso à informação e conectar mercados globais em milissegundos. Através de sistemas distribuídos e protocolos
+      de alta performance, a internet hoje é o motor que impulsiona a educação, o comércio eletrônico e a automação
+      industrial.
+    </p>
+ 
+    <img src="robo.webp" class="img-fluid my-4 robo-img" alt="Ilustração de robô e tecnologia">
+ 
+    <br>
+    <a href="https://mitsloanreview.com.br/tecnologia/" target="_blank" class="btn-custom">
+      Saiba mais sobre o futuro →
+    </a>
+  </section>
+ 
+  <!-- CONTATO -->
+  <section id="contato" class="my-5">
+    <h2>Entre em <span class="highlight">Contato</span></h2>
+ 
+    <div class="form-container">
+      <form id="contactForm" novalidate>
+ 
+        <div class="form-group mb-3">
+          <label class="form-label">Nome:</label>
+          <input type="text" id="nome" class="form-control" placeholder="Seu nome completo">
+          <div class="error-msg" id="nomeError">Por favor, informe seu nome.</div>
+        </div>
+ 
+        <div class="form-group mb-3">
+          <label class="form-label">E-mail:</label>
+          <input type="email" id="email" class="form-control" placeholder="seu@email.com">
+          <div class="error-msg" id="emailError">Por favor, informe um e-mail válido.</div>
+        </div>
+ 
+        <div class="form-group mb-3">
+          <label class="form-label">Mensagem:</label>
+          <textarea id="mensagem" class="form-control" rows="4" placeholder="Como podemos ajudar?"></textarea>
+          <div class="error-msg" id="mensagemError">Por favor, escreva uma mensagem.</div>
+        </div>
+ 
+        <button type="button" class="btn-custom w-100" onclick="enviarFormulario()">Enviar Mensagem</button>
+ 
+        <!-- Mensagem de sucesso -->
+        <div id="successMsg" class="success-msg" style="display:none;">
+          ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+        </div>
+ 
+      </form>
+    </div>
+  </section>
+ 
+  <!-- TABELA -->
+  <section class="my-5">
+    <h2>Linguagens <span class="highlight">utilizadas</span></h2>
+ 
+    <div class="table-responsive">
+      <table class="table tabela-linguagens">
+        <thead>
+          <tr>
+            <th>Interface Web</th>
+            <th>Uso</th>
+            <th>Vantagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Estrutura do site</td>
+            <td>Simples e eficiente</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Estilização</td>
+            <td>Design moderno</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Interatividade</td>
+            <td>Funcionalidades dinâmicas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+ 
+</main>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p class="footer-brand">Tech <span class="highlight">ES</span></p>
+    <p>Siga-nos em nossas redes sociais</p>
+    <ul class="social-links">
+      <li><a href="https://tecnoblog.net/responde/facebook-o-que-e-historia-e-os-principais-recursos-da-rede-social-que-originou-a-meta/">Facebook</a></li>
+      <li><a href="https://www.instagram.com/diariodeti/">Instagram</a></li>
+      <li><a href="https://pt-br.facebook.com/business/industries/technology-telecom">Suporte</a></li>
+    </ul>
+    <p class="copy">&copy; 2026 Empresa Tech ES - Todos os direitos reservados.</p>
+  </div>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+ 
